@@ -20,7 +20,6 @@ export const projects: Project[] = [
       "Tailwind CSS",
     ],
     github: "https://github.com/bhaskarsai/ai-research-copilot",
-    live: "https://ai-research-copilot.vercel.app",
     featured: true,
     features: [
       "Semantic search across research papers",
@@ -64,7 +63,6 @@ export const projects: Project[] = [
       "WebSocket",
     ],
     github: "https://github.com/bhaskarsai/live-event-detection",
-    live: "https://live-event-detection.vercel.app",
     featured: true,
     features: [
       "Real-time audio stream processing",

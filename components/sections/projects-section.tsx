@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "@/components/animations/fade-in";
 import { motion } from "framer-motion";
-import { ExternalLink, Folder } from "lucide-react";
+import { Folder } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 
 const filters = ["All", "AI", "ML", "Full Stack"];
@@ -91,13 +91,6 @@ export function ProjectsSection() {
                       <Button variant="ghost" size="sm" asChild>
                         <a href={project.github} target="_blank" rel="noopener noreferrer">
                           <SiGithub size={16} /> GitHub
-                        </a>
-                      </Button>
-                    )}
-                    {project.live && (
-                      <Button variant="ghost" size="sm" asChild>
-                        <a href={project.live} target="_blank" rel="noopener noreferrer">
-                          <ExternalLink size={16} /> Demo
                         </a>
                       </Button>
                     )}

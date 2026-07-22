@@ -7,7 +7,7 @@ import { skillCategories } from "@/constants/skills";
 import { achievements } from "@/constants/achievements";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowLeft, Download, Mail, ExternalLink } from "lucide-react";
+import { ArrowLeft, Download, Mail } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import type { Metadata } from "next";
@@ -94,11 +94,6 @@ export default function ResumePage() {
                   {p.github && (
                     <a href={p.github} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-white transition-colors">
                       <SiGithub size={18} />
-                    </a>
-                  )}
-                  {p.live && (
-                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-white transition-colors">
-                      <ExternalLink size={18} />
                     </a>
                   )}
                 </div>

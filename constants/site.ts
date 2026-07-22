@@ -6,7 +6,7 @@ export const siteConfig = {
     "Software Engineer specializing in AI, Machine Learning, Full Stack Development, and Generative AI. Building intelligent systems that solve real-world problems.",
   url: "https://bhaskarsai.dev",
   ogImage: "/assets/og-image.jpg",
-  email: "bhaskarsai.sudheer@gmail.com",
+  email: "saisudheer5020@gmail.com",
   github: "https://github.com/bhaskarsai",
   linkedin: "https://linkedin.com/in/bhaskarsai",
   leetcode: "https://leetcode.com/bhaskarsai",

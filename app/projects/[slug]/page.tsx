@@ -4,7 +4,7 @@ import Image from "next/image";
 import { projects } from "@/constants/projects";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ExternalLink, CheckCircle2, AlertCircle, Sparkles, Cpu } from "lucide-react";
+import { ArrowLeft, CheckCircle2, AlertCircle, Sparkles, Cpu } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import type { Metadata } from "next";
 
@@ -72,13 +72,6 @@ export default async function ProjectPage({ params }: Props) {
               <Button variant="outline" asChild>
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
                   <SiGithub size={18} /> GitHub Repository
-                </a>
-              </Button>
-            )}
-            {project.live && (
-              <Button variant="gradient" asChild>
-                <a href={project.live} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink size={18} /> Live Demonstration
                 </a>
               </Button>
             )}

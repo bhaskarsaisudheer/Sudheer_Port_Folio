@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhaskar Sai Sudheer Tangeti - Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+    
+    @page {
+      size: A4;
+      margin: 12mm 14mm 12mm 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .name {
+      font-size: 22pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+
+    .title-line {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 2px;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+      font-size: 8.5pt;
+      color: #475569;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .contact-item a {
+      color: #1e293b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .dot-sep {
+      color: #94a3b8;
+    }
+
+    /* Section Styling */
+    section {
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .summary-text {
+      color: #334155;
+      font-size: 9pt;
+      line-height: 1.5;
+    }
+
+    /* Experience & Projects Items */
+    .item {
+      margin-bottom: 9px;
+      page-break-inside: avoid;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .item-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-subtitle {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #2563eb;
+    }
+
+    .item-date {
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .item-cert-id {
+      font-size: 8pt;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    ul.bullets {
+      list-style-type: disc;
+      margin-left: 16px;
+      margin-top: 3px;
+    }
+
+    ul.bullets li {
+      font-size: 8.8pt;
+      color: #334155;
+      margin-bottom: 2px;
+      line-height: 1.4;
+    }
+
+    ul.bullets li strong {
+      color: #0f172a;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .skills-row {
+      display: flex;
+      margin-bottom: 4px;
+    }
+
+    .skills-cat {
+      width: 140px;
+      font-weight: 700;
+      font-size: 8.8pt;
+      color: #0f172a;
+      flex-shrink: 0;
+    }
+
+    .skills-list {
+      font-size: 8.8pt;
+      color: #334155;
+      flex-grow: 1;
+    }
+
+    /* Achievements & Certifications */
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+    }
+
+    .achieve-item {
+      font-size: 8.8pt;
+      color: #334155;
+    }
+
+    .achieve-item strong {
+      color: #0f172a;
+    }
+
+    /* Badges */
+    .tech-badge {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #334155;
+      font-size: 7.5pt;
+      font-weight: 600;
+      padding: 1px 6px;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+      margin-right: 3px;
+      margin-top: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="name">Bhaskar Sai Sudheer Tangeti</div>
+      <div class="title-line">Software & AI Engineer | Full Stack & Machine Learning Specialist</div>
+      <div class="contact-bar">
+        <span class="contact-item">
+          <strong>Email:</strong>&nbsp;<a href="mailto:saisudheer5020@gmail.com">saisudheer5020@gmail.com</a>
+        </span>
+        <span class="dot-sep">•</span>
+        <span class="contact-item">
+          <strong>GitHub:</strong>&nbsp;<a href="https://github.com/bhaskarsai" target="_blank">github.com/bhaskarsai</a>
+        </span>
+        <span class="dot-sep">•</span>
+        <span class="contact-item">
+          <strong>LinkedIn:</strong>&nbsp;<a href="https://linkedin.com/in/bhaskarsai" target="_blank">linkedin.com/in/bhaskarsai</a>
+        </span>
+        <span class="dot-sep">•</span>
+        <span class="contact-item">
+          <strong>LeetCode:</strong>&nbsp;<a href="https://leetcode.com/bhaskarsai" target="_blank">leetcode.com/bhaskarsai</a>
+        </span>
+        <span class="dot-sep">•</span>
+        <span class="contact-item">
+          <strong>Location:</strong>&nbsp;Visakhapatnam, India
+        </span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Computer Science & Engineering graduate specializing in Artificial Intelligence and Machine Learning with an 8.5 CGPA. Hands-on experience developing full-stack web applications, retrieval-augmented generation (RAG) AI systems, and machine learning pipelines. Demonstrated strong problem-solving proficiency with 200+ LeetCode problems solved and practical experience across 3 industry internships.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-row">
+        <div class="skills-cat">Languages & Core</div>
+        <div class="skills-list">Python, Java, JavaScript, TypeScript, SQL, HTML5, CSS3</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-cat">AI, ML & Data</div>
+        <div class="skills-list">PyTorch, TensorFlow, Scikit-learn, OpenAI API, Gemini, LLMs, RAG, ChromaDB, Prompt Engineering</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-cat">Frontend & Web</div>
+        <div class="skills-list">React, Next.js, Tailwind CSS, Responsive Design, State Management</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-cat">Backend & API</div>
+        <div class="skills-list">FastAPI, Node.js, Express, RESTful APIs, Microservices Architecture</div>
+      </div>
+      <div class="skills-row">
+        <div class="skills-cat">Databases & DevOps</div>
+        <div class="skills-list">PostgreSQL, MySQL, MongoDB, Prisma ORM, Docker, Git, GitHub, Vercel, Railway</div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <div class="section-title">Work Experience</div>
+      
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Data Science & Analytics Intern</span>
+            <span class="item-subtitle"> — The Developers Arena</span>
+            <span class="item-cert-id">(Cert ID: CERT-202604-EMP20260210-6318)</span>
+          </div>
+          <span class="item-date">Feb 2026 – Apr 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Executed end-to-end data analytics and predictive modeling projects, analyzing complex datasets using Python, Pandas, and SQL.</li>
+          <li>Built data processing pipelines and automated visualization dashboards for exploratory data analysis (EDA).</li>
+          <li>Received formal recognition for technical excellence and outstanding project execution performance.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Machine Learning Intern</span>
+            <span class="item-subtitle"> — SkillDzire (Collab with APSCHE)</span>
+            <span class="item-cert-id">(Cert ID: 7d4q8cbgu3)</span>
+          </div>
+          <span class="item-date">Dec 2025 – Mar 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed machine learning algorithms, model training workflows, feature engineering, and hyperparameter tuning pipelines.</li>
+          <li>Evaluated model performance using statistical metrics, cross-validation, and performance optimization techniques.</li>
+          <li>Collaborated under the Andhra Pradesh State Council of Higher Education (APSCHE) industry partnership initiative.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Artificial Intelligence Intern</span>
+            <span class="item-subtitle"> — SkillDzire (AICTE Recognized)</span>
+            <span class="item-cert-id">(Cert ID: SDST-25-26541)</span>
+          </div>
+          <span class="item-date">May 2025 – Jul 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Built AI classification and regression models leveraging deep neural network architectures and data pre-processing workflows.</li>
+          <li>Designed scalable data pipelines and automated evaluation routines for machine learning benchmarks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section>
+      <div class="section-title">Key Projects</div>
+      
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">AI Research Copilot</span>
+            <span class="item-subtitle"> | Next.js, Python, FastAPI, OpenAI, ChromaDB, RAG</span>
+          </div>
+          <span class="item-date">2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Architected an intelligent research assistant powered by LLMs and Retrieval-Augmented Generation (RAG).</li>
+          <li>Implemented semantic search across research papers, automated summarization, and contextual vector Q&A with ChromaDB.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Live Event Detection</span>
+            <span class="item-subtitle"> | Python, PyTorch, FastAPI, React, Docker, WebSocket</span>
+          </div>
+          <span class="item-date">2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Engineered a real-time audio event detection system using deep learning to classify environmental sounds and audio streams.</li>
+          <li>Optimized model latency for live inference and implemented WebSocket streams for real-time waveform visualization.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Meeting Assistant</span>
+            <span class="item-subtitle"> | Next.js, OpenAI Whisper, GPT-4, PostgreSQL, Prisma, Tailwind CSS</span>
+          </div>
+          <span class="item-date">2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Developed an AI meeting assistant that transcribes audio streams, extracts key action items, and generates meeting summaries.</li>
+          <li>Built speaker diarization pipelines and searchable meeting archives with structured database storage.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Raghu Engineering College</span>
+            <span class="item-subtitle"> — B.Tech in Computer Science & Engineering (AI & ML)</span>
+          </div>
+          <span class="item-date">2022 – 2026 | CGPA: 8.5 / 10</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section>
+      <div class="section-title">Achievements & Certifications</div>
+      <div class="achievements-grid">
+        <div class="achieve-item"><strong>Data Science & Analytics Cert:</strong> The Developers Arena (Cert ID: CERT-202604-EMP20260210-6318)</div>
+        <div class="achieve-item"><strong>Machine Learning Cert:</strong> SkillDzire & APSCHE (Cert ID: 7d4q8cbgu3)</div>
+        <div class="achieve-item"><strong>AI Certification:</strong> SkillDzire & AICTE (Cert ID: SDST-25-26541)</div>
+        <div class="achieve-item"><strong>Smart Coder Silver Rank:</strong> Competitive Programming Silver Tier</div>
+        <div class="achieve-item"><strong>200+ LeetCode Solved:</strong> Algorithmic Problem Solving Proficiency</div>
+        <div class="achieve-item"><strong>NPTEL Java Certification:</strong> Completed with Distinction</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

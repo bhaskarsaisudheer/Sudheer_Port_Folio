@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     const data = contactSchema.parse(body);
 
     const resendApiKey = process.env.RESEND_API_KEY;
-    const contactEmail = process.env.CONTACT_EMAIL || "bhaskarsai.sudheer@gmail.com";
+    const contactEmail = process.env.CONTACT_EMAIL || "saisudheer5020@gmail.com";
 
     // Resend Email dispatch if API key is provided
     if (resendApiKey) {
